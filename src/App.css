@@ -1,0 +1,36 @@
+#header {
+  border: 1px solid black;
+  background-color: #2C3333;
+  color: #99FEFF;
+  padding: 2%;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  left: 0;
+  display: inline;
+}
+
+#title {
+  width: fit-content;
+  margin: 0;
+}
+
+.navButton {
+  border-radius: 30px;
+  background: #04009A;
+  color: #99FEFF;
+  margin: 0 1%;  
+  font-size: 30px;
+  padding: 15px;
+  transition: 1s ease-in-out;
+}
+
+#footer {
+  border: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding: 2%;
+}
