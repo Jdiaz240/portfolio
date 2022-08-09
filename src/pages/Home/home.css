@@ -1,6 +1,5 @@
 body {
     background-image: linear-gradient(rgba(17%,20%,20%,1), rgba(49%,92.9%,100%,0.75));
-    /* background-color: ;  */
     text-align: center;
 }
 
@@ -26,7 +25,7 @@ hr {
     padding: 15px;
     transition: 1s ease-in-out;
   }
-  .homeBut:hover {
+.homeBut:hover {
       background-color: black;
       border-color: white;
   }

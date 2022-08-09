@@ -7,9 +7,9 @@ export default function Header() {
             <h1>Joshua Diaz</h1>
             
             
-                <button className='navButton'>About me</button>
-                <button className='navButton'>Projects</button>
-                <button className='navButton'>Contact</button>
+                <button className='navButton' href='/about'>About me</button>
+                <button className='navButton' href='/projets'>Projects</button>
+                <button className='navButton' href='/contact'>Contact</button>
             
         </header>
     )
