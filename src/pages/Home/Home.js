@@ -3,14 +3,14 @@ import './home.css'
 
 export default function Home() {
     return (
-        <section className='home'>
+        <div className='home'>
             <h1 id='namePlate'>JOSHUA DIAZ</h1>
             <hr/>
             <ul>
-                <li><button className='homeBut' href='/about'>ABOUT ME</button></li>
-                <li><button className='homeBut' href='/projects'>PROJECTS</button></li>
-                <li><button className='homeBut' href='/contact'>CONTACT</button></li>
+                <li><a href='/about'><button className='homeBut'>ABOUT ME</button></a></li>
+                <li><a href='/projects'><button className='homeBut' href='/projects'>PROJECTS</button></a></li>
+                <li><a href='/contact'><button className='homeBut' href='/contact'>CONTACT</button></a></li>
             </ul>
-        </section>
+        </div>
     )
 }
