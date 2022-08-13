@@ -1,3 +1,70 @@
+/* handles background color for each page */
+body { 
+  text-align: center;
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(32,32,32,1));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* handles the background icon on the home page */
+.home {
+  background-image: url('./assets/icon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  height: 100vh;
+  width:  100vh;
+  z-index: -1;
+  position: fixed;
+  left: 31%;
+}
+
+/* handles the top title name area on the home page */
+#namePlate {
+  /* color: #99FEFF; */
+  margin: 4% auto;
+  width: fit-content;
+  background-color: aliceblue;
+  border-radius: 30px;
+  padding: 1%;
+}
+
+/* horizontal rule on home page */
+hr {
+  width: 30%;
+}
+
+/* handles all the buttons on the homes page */
+.homeBut {
+  border-radius: 30px;
+  background: #04009A;
+  color: #99FEFF;
+  margin: 0 1%;  
+  font-size: 20px;
+  padding: 15px;
+  transition: 1s ease-in-out;
+}
+
+/* more css to handle change on hover of home page buttons */
+.homeBut:hover {
+    background-color: black;
+    border-color: white;
+}
+
+/* handles the list of buttons  */
+ul {
+  padding: 0;
+}
+/* more css for home page buttons */
+li {
+  list-style: none;
+  margin: 8% 0;
+}
+
+/* end of home page css*/
+
+
+
 /* Header Css */
 #header {
   display: flex;
@@ -5,23 +72,26 @@
   background-color: #2C3333;
   color: #99FEFF;
   padding: 2%;
-  position: fixed;
+  position: fixed; 
   width: 100%;
   margin: 0;
   top: 0;
   left: 0;  
 }
 
+/* corner icon sizing in header */
 #plate {
-  width: 50%;
+ height: 100px;
+ width: 100px;
 }
 
+/* container for buttons */
 nav {
   margin-left: 40%;
   width: 50%;
   padding: 1%;
 }
-
+/* button css in header */
 .navButton {
   border-radius: 30px;
   background: #04009A;
@@ -34,21 +104,25 @@ nav {
 
 /* css for container of about me bio, and img */
 .container {
-  display: flex;
-  flex-direction: row;
-  position: fixed;
-  bottom: 10%;
+  display: inline-flex;
+  /* flex-direction: row; */
+  border: 1px solid green;
+  margin-top: 10%;
 }
 
+/*  */
 #bio {
-  border: 1px solid black;
-  margin: 0 0 0 10%;
+  border: 1px solid white;
+  margin: 0 2% 0 2%; 
+  padding: 5%;
+  color: white;  
 }
 
 #profilePic {
   border: 2px solid red;
   height: 100%;
   width: 100%;
+  margin: 5%;
 }
 
 img {
@@ -56,11 +130,13 @@ img {
   max-height: 100%;
 }
 
-#footer {
-  border: 1px solid black;
+/* #footer {
+  border: 1px solid rgb(240, 236, 236);
   position: fixed;
   bottom: 0;
   width: 100%;
   left: 0;
   padding: 2%;
-}
+} */
+
+

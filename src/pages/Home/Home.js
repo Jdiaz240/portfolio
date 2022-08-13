@@ -1,9 +1,12 @@
 import React from 'react'
 // import './home.css'
 
+
 export default function Home() {
     return (
+        <>
         <div className='home'>
+            </div>
             <h1 id='namePlate'>JOSHUA DIAZ</h1>
             <hr/>
             <ul>
@@ -11,6 +14,6 @@ export default function Home() {
                 <li><a href='/projects'><button className='homeBut' href='/projects'>PROJECTS</button></a></li>
                 <li><a href='/contact'><button className='homeBut' href='/contact'>CONTACT</button></a></li>
             </ul>
-        </div>
+            </>
     )
 }

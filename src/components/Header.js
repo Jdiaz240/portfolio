@@ -1,10 +1,11 @@
-
+import Icon from '../assets/icon.png'
 
 export default function Header() {
     return (
         <header id='header'>
             <div id='plate'>
-                <h1>Joshua Diaz</h1>
+                {/* <h1>Joshua Diaz</h1> */}
+                <a href='/'><img src={Icon} alt='Joshua Diaz' ></img></a>
             </div>
             <nav>
                 <a href='/about'><button className='navButton'>About me</button></a>
