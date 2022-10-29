@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../App.css'
+import Header from '../../components/Header'
+import Applications from '../../components/Applications'
+import Quiz from '../../assets/quizImg.png'
+import Palindrome from '../../assets/palindrome.png'
+import WordGuess from '../../assets/wordGuess.png'
 
 export default function Projects() {
+  const [Frame, setFrame] = useState('')
+  
+
   return (
-    <div>
-      
-    </div>
+    <>
+      <Header />
+      <iframe id='frame' src={Frame} title='applications'></iframe>
+      <div className='projectsContainer'>
+        <Applications src={WordGuess} alt={'Word Guess Game'} setFrame={setFrame} projLink={'https://jdiaz240.github.io/wordGuess/'} />
+        <Applications src={Quiz} alt={'MK Quiz'} setFrame={setFrame} projLink={'https://jdiaz240.github.io/quiz/'} />
+        <Applications src={Palindrome} alt={'Palindrome Checker'} setFrame={setFrame} projLink={'https://jdiaz240.github.io/palindrome/'} />
+      </div>
+    </>
   )
 }

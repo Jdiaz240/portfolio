@@ -7,9 +7,9 @@ export default function AboutMe() {
     <>
       <Header />
       <h1>About Me</h1>
-      <div className='container'>
+      <div className='bioContainer'>
         <aside id='profilePic'>
-          <img src={Profile}></img>
+          <img id='test' alt='profile' src={Profile}></img>
         </aside>
         <section id='bio'>
 
