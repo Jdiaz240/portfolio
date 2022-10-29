@@ -9,6 +9,7 @@ export default function Home() {
 
                 <div id='container'>
                     <h1 id='namePlate'>JOSHUA DIAZ</h1>
+                    <h2>Web Developer</h2>
                     <hr />
                     <ul>
                         <li><a href='/about'><button className='homeBut'>ABOUT ME</button></a></li>
