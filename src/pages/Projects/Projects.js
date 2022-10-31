@@ -14,6 +14,7 @@ export default function Projects() {
     <div>
       <Header />
       <div id='pageContainer'>  
+        <h1 id='activeApp'>Application in Action:</h1>
         <iframe id='frame' src={Frame} title='applications'></iframe>
         <h1 id='projectTitle'>Please Click On A Project Below To See It In Action</h1>
         <div className='projectsContainer'>
