@@ -8,17 +8,20 @@ import WordGuess from '../../assets/wordGuess.png'
 
 export default function Projects() {
   const [Frame, setFrame] = useState('')
-  
+
 
   return (
-    <>
+    <div>
       <Header />
-      <iframe id='frame' src={Frame} title='applications'></iframe>
-      <div className='projectsContainer'>
-        <Applications src={WordGuess} alt={'Word Guess Game'} setFrame={setFrame} projLink={'https://jdiaz240.github.io/wordGuess/'} />
-        <Applications src={Quiz} alt={'MK Quiz'} setFrame={setFrame} projLink={'https://jdiaz240.github.io/quiz/'} />
-        <Applications src={Palindrome} alt={'Palindrome Checker'} setFrame={setFrame} projLink={'https://jdiaz240.github.io/palindrome/'} />
-      </div>
-    </>
+      <div id='pageContainer'>  
+        <iframe id='frame' src={Frame} title='applications'></iframe>
+        <h1 id='projectTitle'>Please Click On A Project Below To See It In Action</h1>
+        <div className='projectsContainer'>
+          <Applications src={WordGuess} alt={'Word Guess Game'} setFrame={setFrame} projLink={'https://jdiaz240.github.io/wordGuess/'} />
+          <Applications src={Quiz} alt={'MK Quiz'} setFrame={setFrame} projLink={'https://jdiaz240.github.io/quiz/'} />
+          <Applications src={Palindrome} alt={'Palindrome Checker'} setFrame={setFrame} projLink={'https://jdiaz240.github.io/palindrome/'} />
+        </div> 
+        </div>  
+    </div>
   )
 }
