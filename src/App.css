@@ -1,37 +1,35 @@
 /* handles background color for each page */
 body { 
-  background-image: linear-gradient(rgba(0,0,0,1), rgba(32,32,32,1));
+  background-image: linear-gradient(rgba(0,0,0,1), rgb(52, 161, 163));
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
 #bigContainer {
   display: flex;
-  margin: 5% 2% 0 0;
 }
 
 /* handles the background icon on the home page */
-.icon {
+#icon {
   background-image: url('./assets/icon.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100vh;
-  z-index: -1;
   margin-left: 20%;
-  /* position: fixed; */
-  /* left: 31%; */
+  box-sizing: border-box;
 }
 
 /* handles the container of the nameplate and buttons on the home page */
 #container {
   display: flex;
   flex-direction: column;
-  height: 550px;
+  height: 100vh;
+  width: 100vh;
   margin-left: 10%;
   text-align: center;
   color:white;
-  
+  box-sizing: border-box;
 }
 
 /* handles the top title name area on the home page */
@@ -55,17 +53,16 @@ hr {
   border-style: none;
   border-radius: 30px;
   background: rgb(0, 0, 0, 0);
-  color: #99FEFF;
-  margin: 0 1%;  
+  color: #99feff;
   font-size: 20px;
-  font-weight: bold;
   padding: 10px;
 }
 
 /* more css to handle change on hover of home page buttons */
 .homeBut:hover {
-    box-shadow: 0px 0px 30px grey;
+    box-shadow: 0px 0px 10px 3px white;
     cursor: pointer;
+    color: white;
 }
 
 /* handles the list of buttons  */
@@ -125,7 +122,7 @@ nav {
   font-size: large;
 }
 .navButton:hover {
-  box-shadow: 0px 0px 30px grey;
+  box-shadow: 0px 0px 10px 3px white;
   color: white;
   cursor: pointer;
 }
@@ -161,10 +158,18 @@ nav {
 
 /* Projects page styling */
 
+
+/* #titleContainer {
+  display: inline-flex;
+} */
+
 #activeApp {
   color:#99FEFF;
   font-family: 'Titillium Web', sans-serif;
-  margin: 0 0 2% 10%;
+  width: fit-content;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 10%;
 }
 
 #pageContainer {
@@ -173,8 +178,11 @@ nav {
 
 #projectTitle {
   color: #99FEFF;
-  margin: 0 0 2% 45%;
   font-family: 'Titillium Web', sans-serif;
+  width: fit-content;
+  box-sizing: border-box;
+  float:left;
+  margin-left: 15%;
 }
 
 .projectsContainer {
@@ -217,4 +225,18 @@ nav {
   font-family: 'Titillium Web', sans-serif;
   margin: 10% 0;
   font-size: x-large;
+}
+
+/* ---------------------------------------------------------------- */
+/* media querries */
+
+@media screen and (max-width: 992px) {
+  /* media querries for Home page */
+
+  /* media querries for About Me page */
+
+  /* media querries for Projects page */
+
+  /* media querries for Contact page */
+  
 }

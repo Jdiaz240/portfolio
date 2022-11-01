@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Logo from '../../assets/icon.png'
 
 export default function Home() {
     return (
@@ -16,8 +16,7 @@ export default function Home() {
                         <li><a href='/contact'><button className='homeBut' href='/contact'>CONTACT</button></a></li>
                     </ul>
                 </div>
-                <div className='icon'>
-                </div>
+                <img src={Logo} alt='logo' id='icon'></img>
             </div>
         </>
     )
