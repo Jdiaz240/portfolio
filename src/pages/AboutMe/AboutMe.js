@@ -1,6 +1,7 @@
 import Header from '../../components/Header'
 import '../../App.css'
 import Profile from '../../assets/profile.jpg'
+import Footer from '../../components/Footer'
 
 export default function AboutMe() {
   return (
@@ -17,8 +18,8 @@ export default function AboutMe() {
             I am currently open for work. If you click on the 'Projects' button above you'll be able to see the projects I've completed that
             I'm most proud of. Feel Free to look around the page, and don't be afraid to use the 'Contact' page to reach out to me for any coding needs
             or business inquireies. Thanks for stopping by!</p>
-            
       </div>
+      <Footer/>
     </>
   )
 }
