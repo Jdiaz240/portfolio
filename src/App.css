@@ -85,7 +85,6 @@ li {
 /* Header Css */
 #header {
   display: inline-flex;
-  align-items: center;
   color: #99FEFF;
   padding: 1% 0% 0 2%;
   position: static; 
@@ -118,7 +117,7 @@ nav {
   color: #99FEFF;
   margin: 0 1%;  
   font-size: 15px;
-  padding: 15px;
+  padding: 10px;
   font-size: large;
 }
 
@@ -180,9 +179,6 @@ footer {
 /* Projects page styling */
 
 
-/* #titleContainer {
-  display: inline-flex;
-} */
 
 #activeApp {
   color:#99FEFF;
