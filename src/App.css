@@ -158,6 +158,10 @@ nav {
   margin: 0;
 }
 
+#inline-link {
+  color: white;
+}
+
 footer {
   display: inline-flex;
   width: fit-content;
